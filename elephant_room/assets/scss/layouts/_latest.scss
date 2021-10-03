@@ -1,0 +1,475 @@
+.latest {
+  * {
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  width: 100%;
+  max-width: 890px;
+  margin: 0 auto;
+
+  h1 {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  p {
+    padding-bottom: 20px;
+
+    @media screen and (min-width: $screen-sm) {
+      // padding-right: 50px;
+    }
+
+    @media screen and (max-width: 900px) {
+      padding: 10px;
+    }
+  }
+
+  ul {
+    margin-left: 40px;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 300;
+    padding-bottom: 20px;
+
+    li {
+      padding: 5px 0;
+    }
+  }
+
+  .tags {
+    width: 100%;
+    margin-top: 50px;
+
+    @media screen and (max-width: 599px) {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    p {
+      padding: 5px 0;
+      text-align: center;
+      font-style: italic;
+      color: #676767;
+    }
+    margin-bottom: 40px;
+  }
+
+  .share {
+    p {
+      padding: 5px 0;
+      text-align: center;
+      font-style: italic;
+      color: #676767;
+    }
+    .share-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      max-width: 400px;
+      margin: 20px auto;
+      a {
+        width: 36px;
+        margin: 0 5px;
+        // padding: 10px 30px;
+        i {
+          font-size: 25px;
+          color: #ff6861;
+        }
+      }
+    }
+  }
+
+  .quote-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (max-width: 599px) {
+      padding: 0 50px;
+    }
+  }
+
+  //column style
+  .wp-block-columns,
+  .wp-block-column {
+    max-width: 885px;
+    margin: 0 auto;
+  }
+
+  .wp-block-columns .wp-block-column:nth-child(1) {
+    @media screen and (min-width: 600px) {
+      padding-right: 50px;
+    }
+  }
+
+  .wp-block-columns {
+    margin-bottom: 50px;
+
+    @media screen and (max-width: $screen-sm - 1) {
+      margin-bottom: 0;
+    }
+  }
+
+  .wp-block-column {
+    p {
+      padding-bottom: 20px;
+
+      @media screen and (min-width: $screen-sm) {
+        // padding-right: 50px;
+      }
+
+      @media screen and (max-width: 600px) {
+        padding: 10px 20px;
+      }
+    }
+
+    .wp-block-image {
+      margin-bottom: 0;
+      // padding-right: 30px;
+    }
+  }
+
+  .wp-block-column .wp-block-pullquote {
+    flex-shrink: 0;
+    width: 100%;
+  }
+
+  .wp-block-columns:nth-of-type(1) p:nth-of-type(1) {
+    padding-top: 30px;
+  }
+
+  // BLOCK STYLES
+
+  //hero image block
+  .hero_image {
+    // margin-bottom: 80px;
+    img {
+      max-width: 885px;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+
+  // .hero_video {
+  //     margin-bottom: 80px;
+  // }
+
+  //main heading block
+  .main_heading {
+    position: relative;
+    padding-right: 20px;
+
+    @media screen and (max-width: 599px) {
+      padding-left: 20px;
+      padding-right: 20px;
+      margin-bottom: 0;
+    }
+
+    @media screen and (min-width: 600px) {
+      width: 100%;
+      min-width: 300px;
+      max-width: 370px;
+      padding-left: 10px;
+    }
+
+    h2 {
+      font-size: 36px;
+      line-height: 42px;
+      text-align: left;
+      font-weight: 900;
+      margin: 15px 0;
+    }
+
+    h3 {
+      text-align: left;
+      font-size: 16px;
+      line-height: 22px;
+      color: $pink;
+      font-style: italic;
+    }
+
+    .cs-text-module__content-container {
+      width: 100%;
+    }
+
+    .line-wrapper {
+      width: 100%;
+      height: 6px;
+      // position: absolute;
+      // top: -14px;
+      // left: 0;
+
+      @media screen and (max-width: 600px) {
+        left: 10px;
+      }
+
+      &.line-left,
+      &.line-right {
+        background-image: url("../img/hp-intro-line.svg");
+        background-size: 24% 8px;
+        background-repeat: no-repeat;
+        background-position: -10% 2.5%;
+
+        @media screen and (min-width: $screen-sm-min) {
+          background-position: -2% 5%;
+        }
+
+        &.blue {
+          background-image: url("../img/hp-news-line.svg");
+        }
+      }
+
+      &.line-right {
+        background-position: 110% 1.5%;
+
+        @media screen and (min-width: $screen-sm-min) {
+          background-position: 102% 5%;
+        }
+      }
+    }
+  }
+
+  //text block
+  p {
+    font-size: 18px;
+    line-height: 25px;
+
+    @media screen and (max-width: 599px) {
+      padding: 10px 20px;
+    }
+  }
+
+  .wp-block-file {
+    @media screen and (max-width: 599px) {
+      padding: 0 20px;
+    }
+  }
+
+  //file down load button and other buttons
+  .wp-block-file a,
+  .wp-block-button__link {
+    background-color: #ff6861;
+  }
+
+  // spacer
+  .wp-block-spacer {
+    @media screen and (max-width: 599px) {
+      display: none;
+    }
+  }
+
+  //video block
+  .wp-block-embed {
+    max-width: 885px;
+    margin: 0 auto 50px auto;
+
+    @media screen and (min-width: $screen-sm) {
+      margin-bottom: 50px;
+    }
+
+    &__wrapper {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+
+      iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  //image block
+  .wp-block-image {
+    margin: 50px 0;
+
+    @media screen and (max-width: 599px) {
+      margin: 20px 0 !important;
+    }
+
+    img {
+      max-width: 760px;
+      height: 100%;
+      margin: 0 auto;
+      display: block;
+      width: 100%;
+    }
+
+    figcaption {
+      margin: 0 auto;
+      width: 50%;
+      text-align: center;
+      font-family: "Montserrat", sans-serif;
+      padding: 5px 0;
+    }
+  }
+
+  // pullout quote
+  .wp-block-columns {
+    .wp-block-column {
+      .wp-block-pullquote {
+        background-size: 24% 8px;
+      }
+    }
+  }
+
+  .wp-block-pullquote {
+    background-image: url("../img/hp-intro-line.svg");
+    background-size: 21% 3.5px;
+    background-repeat: no-repeat;
+    background-position: -10% 2.5%;
+    position: relative;
+    // left: 15%;
+
+    @media (max-width: 599px) {
+      margin: 20px 0;
+    }
+
+    p {
+      padding-top: 40px;
+      font-size: 40px;
+      line-height: 42px;
+      font-weight: 900;
+      text-align: left;
+
+      @media screen and (max-width: 600px) {
+        padding-left: 0;
+        padding-right: 0;
+      }
+
+      @media screen and (max-width: $screen-sm - 1) {
+        font-size: 24px;
+        line-height: 26px;
+      }
+    }
+  }
+
+  // figcaption
+
+  figcaption {
+    text-align: center;
+
+    @media screen and (max-width: 600px) {
+      padding: 0 20px;
+    }
+  }
+
+  //other page elements
+
+  hr {
+    width: 100%;
+    color: #000000;
+    margin-top: 120px;
+  }
+
+  .article-content:last-of-type hr {
+    display: none;
+  }
+
+  .article-content {
+    margin-bottom: 70px;
+
+    .readmore {
+      width: 47%;
+      float: right;
+      margin-top: 40px;
+      margin-bottom: 40px;
+      color: $pink;
+      font-style: italic;
+      text-decoration: none;
+
+      @media screen and (max-width: 599px) {
+        width: 100%;
+        padding-left: 20px;
+      }
+    }
+
+    .readless {
+      width: 21%;
+      float: right;
+      font-size: 30px;
+      i {
+        color: #000000;
+      }
+    }
+  }
+
+  .article-content:last-of-type {
+    margin-bottom: 100px;
+  }
+
+  .close {
+    position: relative;
+
+    width: 32px;
+    height: 32px;
+    opacity: 1;
+  }
+  .close:hover {
+    opacity: 0.5;
+  }
+  .close:before,
+  .close:after {
+    position: absolute;
+    right: 30px;
+    content: " ";
+    height: 33px;
+    width: 2px;
+    background-color: #333;
+
+    @media screen and (max-width: 600px) {
+      left: 90%;
+    }
+  }
+  .close:before {
+    transform: rotate(45deg);
+  }
+  .close:after {
+    transform: rotate(-45deg);
+  }
+
+  //VLP
+
+  .vlp-link-container {
+    .vlp-link-text-container {
+      font-size: 18px;
+      line-height: 22px;
+      width: 100%;
+      height: auto;
+      text-transform: none;
+      font-family: Montserrat, sans-serif;
+      letter-spacing: -0.5px;
+      font-weight: 300;
+      padding-bottom: 20px;
+
+      @media screen and (max-width: 600px) {
+        padding: 10px;
+      }
+    }
+
+    .vlp-link-image-container {
+      .vlp-link-image {
+        padding-bottom: 10px;
+
+        img {
+          max-width: 100% !important;
+          width: 100% !important;
+          max-height: 100% !important;
+          height: 100% !important;
+        }
+      }
+    }
+  }
+
+  // .read-more-wrapper {
+  //     @media screen and (max-width: 599px) {
+  //         max-height: 27em;
+  //     }
+  // }
+}
