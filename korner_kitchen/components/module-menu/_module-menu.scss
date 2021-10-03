@@ -1,0 +1,195 @@
+.module__menu {
+  &__container {
+    padding: 20px 25px 40px 25px;
+
+    @include mobile-only() {
+      padding: 0;
+    }
+
+    p {
+      @include roc-regular;
+      color: #ffffff;
+      font-size: 40px;
+      line-height: 35px;
+
+      @include mobile-only() {
+        font-size: 30px;
+        line-height: 25px;
+      }
+    }
+
+    &--item {
+      padding-top: 35px;
+      padding-bottom: 5px;
+      display: flex;
+      align-items: center;
+      // opacity: 0;
+
+      @include mobile-only() {
+        padding: 0;
+        flex-direction: column;
+      }
+
+      @media screen and (min-width: 1400px) {
+        align-items: flex-start;
+      }
+      &--text {
+        width: 100%;
+        max-width: 350px;
+        height: 480px;
+        padding: 30px 20px;
+        position: relative;
+
+        @include mobile-only() {
+          max-width: 100%;
+          height: 100%;
+          display: flex;
+          padding: 30px 10px;
+        }
+
+        @media screen and (min-width: 1500px) {
+          max-width: 500px;
+        }
+        img {
+          padding-bottom: 35px;
+          @include mobile-only() {
+            max-width: 134px;
+            padding: 0 20px;
+            height: 100%;
+          }
+        }
+        .component__cta {
+          text-decoration: none;
+          color: #ffffff;
+          text-transform: uppercase;
+          font-size: 14px;
+          padding: 10px 40px;
+          position: absolute;
+          bottom: 25px;
+
+          @include mobile-only() {
+            position: initial;
+            padding: 2px 40px;
+            margin: 14px 0;
+            display: block;
+            text-align: center;
+            max-width: 175px;
+          }
+        }
+      }
+      &--img {
+        width: 100%;
+        position: relative;
+        img {
+          display: block;
+          margin: 0 auto;
+        }
+
+        img.hide-desktop {
+          width: 100%;
+        }
+      }
+    }
+
+    &--item {
+      &.yamiko {
+        .module__menu__container--item--text {
+          background-color: $peach;
+          .component__cta {
+            background-color: $yellow;
+            border: solid 2px $yellow;
+            transition: 0.2s;
+          }
+
+          .component__cta:hover {
+            transition: 0.2s;
+            background-color: $peach;
+            color: $yellow;
+          }
+        }
+        .module__menu__container--item--img {
+          padding-left: 2%;
+          @include mobile-only() {
+            padding-left: 0;
+          }
+
+          .img-a {
+            position: absolute;
+            width: 90%;
+          }
+          .img-b {
+            position: relative;
+            width: 100%;
+          }
+        }
+      }
+
+      &.dimko {
+        @include mobile-only() {
+          flex-direction: column-reverse;
+        }
+        .module__menu__container--item--text {
+          background-color: $navy-blue;
+          .component__cta {
+            background-color: $pink;
+            border: solid 2px $pink;
+            transition: 0.2s;
+          }
+
+          .component__cta:hover {
+            transition: 0.2s;
+            background-color: $navy-blue;
+            color: $pink;
+          }
+        }
+        .module__menu__container--item--img {
+          padding-right: 2%;
+          @include mobile-only() {
+            padding-right: 0;
+          }
+
+          .img-a {
+            position: absolute;
+            width: 100%;
+          }
+          .img-b {
+            position: relative;
+            width: 100%;
+          }
+        }
+      }
+
+      &.mexiko {
+        .module__menu__container--item--text {
+          background-color: $green;
+          .component__cta {
+            background-color: $orange;
+            border: solid 2px $orange;
+            transition: 0.2s;
+          }
+
+          .component__cta:hover {
+            transition: 0.2s;
+            background-color: $green;
+            color: $orange;
+          }
+        }
+        .module__menu__container--item--img {
+          padding-left: 2%;
+          @include mobile-only() {
+            padding-left: 0;
+          }
+
+          .img-a {
+            position: absolute;
+            width: 100%;
+          }
+          .img-b {
+            position: relative;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
